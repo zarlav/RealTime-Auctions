@@ -1,0 +1,46 @@
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\appsettings.json
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\RealTime Auctions.staticwebassets.endpoints.json
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\RealTime Auctions.exe
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\RealTime Auctions.deps.json
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\RealTime Auctions.runtimeconfig.json
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\RealTime Auctions.dll
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\RealTime Auctions.pdb
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime Auctions.csproj.AssemblyReference.cache
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime Auctions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime Auctions.AssemblyInfoInputs.cache
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime Auctions.AssemblyInfo.cs
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime Auctions.csproj.CoreCompileInputs.cache
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime Auctions.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime Auctions.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\rjimswa.dswa.cache.json
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\scopedcss\bundle\RealTime Auctions.styles.css
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime.B63B7FDB.Up2Date
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime Auctions.dll
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\refint\RealTime Auctions.dll
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime Auctions.pdb
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime Auctions.genruntimeconfig.cache
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\obj\Debug\net8.0\ref\RealTime Auctions.dll
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\StackExchange.Redis.dll
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\System.IO.Hashing.dll
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
