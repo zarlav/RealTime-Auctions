@@ -1,57 +1,24 @@
-import React, { useEffect, useState } from 'react';
-import AuctionList from './components/AuctionList';
-import { connectToHub, subscribeToAuction, placeBid } from './services/signalrService';
+import { Routes, Route, Navigate, useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import Login from './Components/Login';
+import AuctionDashboard from './Components/AuctionDashboard';
 
-interface Auction {
-  id: string;
-  productName: string;
-  currentPrice: number;
-  leaderUserId: string;
-}
+function App() {
+  const [user, setUser] = useState<any>(null);
+  const navigate = useNavigate();
 
-const App: React.FC = () => {
-  const [auctions, setAuctions] = useState<Auction[]>([]);
-
-  useEffect(() => {
-    // Poveži se na SignalR hub
-    connectToHub();
-
-    // Primer: učlani se u demo aukciju
-    subscribeToAuction('demo-auction-1', (data: any) => {
-      setAuctions((prev) => {
-        const index = prev.findIndex(a => a.id === data.AuctionId);
-        if (index >= 0) {
-          const updated = [...prev];
-          updated[index] = {
-            ...updated[index],
-            currentPrice: data.CurrentPrice,
-            leaderUserId: data.LeaderUserId
-          };
-          return updated;
-        } else {
-          return [...prev, {
-            id: data.AuctionId,
-            productName: 'Demo Product',
-            currentPrice: data.CurrentPrice,
-            leaderUserId: data.LeaderUserId
-          }];
-        }
-      });
-    });
-  }, []);
-
-  const handleBid = (auctionId: string) => {
-    const amount = prompt("Enter your bid amount:");
-    if (!amount) return;
-    placeBid(auctionId, "user-demo", parseFloat(amount));
+  const handleLogin = (userData: any) => {
+    setUser(userData);
+    localStorage.setItem('user', JSON.stringify(userData)); 
+    navigate('/auctions');
   };
 
   return (
-    <div className="app">
-      <h1>Real-Time Auctions</h1>
-      <AuctionList auctions={auctions} onBid={handleBid} />
-    </div>
+    <Routes>
+      <Route path="/" element={user ? <Navigate to="/auctions" /> : <Login onLogin={handleLogin} />} />
+      <Route path="/auctions" element={user ? <AuctionDashboard user={user} /> : <Navigate to="/" />} />
+    </Routes>
   );
-};
+}
 
 export default App;

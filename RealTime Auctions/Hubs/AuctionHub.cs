@@ -5,7 +5,6 @@ namespace RealTime_Auctions.Hubs
 {
     public class AuctionHub : Hub
     {
-        // Ovim metodom klijenti se mogu "priključiti" na određenu aukciju
         public async Task JoinAuction(string auctionId)
         {
             await Groups.AddToGroupAsync(Context.ConnectionId, auctionId);

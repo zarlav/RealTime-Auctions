@@ -2,52 +2,40 @@
 using RealTime_Auctions.Models;
 using RealTime_Auctions.Services;
 
-namespace RealTime_Auctions.Controllers
+namespace RealTime_Auctions.Controllers;
+
+[ApiController]
+[Route("api/auctions")]
+public class AuctionsController : ControllerBase
 {
-    [ApiController]
-    [Route("api/auctions")]
-    public class AuctionsController : ControllerBase
+    private readonly AuctionService _service;
+    public AuctionsController(AuctionService service) => _service = service;
+
+    [HttpGet("active")]
+    public async Task<IActionResult> GetActive() => Ok(await _service.GetActiveAuctionsAsync());
+
+    [HttpPost]
+    public async Task<IActionResult> Create([FromBody] Auction auction)
     {
-        private readonly AuctionService _auctionService;
+        auction.Id = Guid.NewGuid().ToString();
+        auction.StartAt = DateTime.UtcNow;
+        if (auction.EndAt <= auction.StartAt) auction.EndAt = auction.StartAt.AddMinutes(5);
+        auction.Status = "active";
+        await _service.CreateAuctionAsync(auction);
+        return Ok(auction);
+    }
 
-        public AuctionsController(AuctionService auctionService)
-        {
-            _auctionService = auctionService;
-        }
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(string id)
+    {
+        await _service.DeleteAuctionAsync(id);
+        return Ok();
+    }
 
-        [HttpPost]
-        public async Task<IActionResult> CreateAuction(Auction auction)
-        {
-            await _auctionService.CreateAuctionAsync(auction);
-            return Ok(auction);
-        }
-
-        [HttpPost("{auctionId}/bid")]
-        public async Task<IActionResult> PlaceBid(string auctionId, [FromQuery] string userId, [FromQuery] decimal amount)
-        {
-            try
-            {
-                await _auctionService.PlaceBidAsync(auctionId, userId, amount);
-                return Ok(new { auctionId, userId, amount });
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { message = ex.Message });
-            }
-        }
-
-        [HttpGet("active")]
-        public async Task<IActionResult> GetActiveAuctions()
-        {
-            var auctions = await _auctionService.GetActiveAuctionsAsync();
-            return Ok(auctions);
-        }
-
-        [HttpGet("{auctionId}/bids")]
-        public async Task<IActionResult> GetBids(string auctionId)
-        {
-            var bids = await _auctionService.GetBidsAsync(auctionId);
-            return Ok(bids);
-        }
+    [HttpPost("{id}/bid")]
+    public async Task<IActionResult> Bid(string id, [FromQuery] string userId, [FromQuery] decimal amount)
+    {
+        await _service.PlaceBidAsync(id, userId, amount);
+        return Ok();
     }
 }

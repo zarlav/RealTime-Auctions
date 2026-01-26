@@ -10,14 +10,14 @@ interface Auction {
 
 interface Props {
   auctions: Auction[];
-  onBid: (auctionId: string) => void;
+  userId: string; 
 }
 
-const AuctionList: React.FC<Props> = ({ auctions, onBid }) => {
+const AuctionList: React.FC<Props> = ({ auctions, userId }) => {
   return (
     <div className="auction-list">
       {auctions.map(a => (
-        <AuctionCard key={a.id} auction={a} onBid={onBid} />
+        <AuctionCard key={a.id} auction={a} userId={userId} />
       ))}
     </div>
   );

@@ -2,39 +2,39 @@
 using RealTime_Auctions.Models;
 using RealTime_Auctions.Services;
 
-namespace RealTime_Auctions.Controllers
+namespace RealTime_Auctions.Controllers;
+
+[ApiController]
+[Route("api/users")]
+public class UsersController : ControllerBase
 {
-    [ApiController]
-    [Route("api/users")]
-    public class UsersController : ControllerBase
+    private readonly UserService _userService;
+
+    public UsersController(UserService userService)
     {
-        private readonly UserService _userService;
+        _userService = userService;
+    }
 
-        public UsersController(UserService userService)
+    [HttpPost("register")]
+    public async Task<IActionResult> Register([FromBody] User user)
+    {
+        if (string.IsNullOrEmpty(user.Username) || string.IsNullOrEmpty(user.Password))
         {
-            _userService = userService;
+            return BadRequest(new { message = "Korisničko ime i lozinka su obavezni!" });
         }
 
-        [HttpPost]
-        public async Task<IActionResult> CreateUser(User user)
-        {
-            await _userService.CreateUserAsync(user);
-            return Ok(user);
-        }
+        await _userService.CreateUserAsync(user);
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetUser(string id)
+        return Ok(new
         {
-            var user = await _userService.GetUserAsync(id);
-            if (user == null) return NotFound();
-            return Ok(user);
-        }
+            message = "Uspešna registracija!",
+            userId = user.Id
+        });
+    }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAllUsers()
-        {
-            var users = await _userService.GetAllUsersAsync();
-            return Ok(users);
-        }
+    [HttpGet]
+    public async Task<IActionResult> GetAll()
+    {
+        return Ok("Lista korisnika je u Redisu.");
     }
 }

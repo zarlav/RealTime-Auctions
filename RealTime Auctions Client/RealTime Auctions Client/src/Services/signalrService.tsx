@@ -1,33 +1,39 @@
 import * as signalR from "@microsoft/signalr";
 
-let connection: signalR.HubConnection;
+let connection: signalR.HubConnection | null = null;
 
 export const connectToHub = () => {
+  if (connection && connection.state === signalR.HubConnectionState.Connected) return;
+
   connection = new signalR.HubConnectionBuilder()
-    .withUrl("https://localhost:5001/hubs/auction") // ASP.NET Core hub
+    .withUrl("https://localhost:7068/hubs/auction")
     .withAutomaticReconnect()
     .build();
 
-  connection.start().then(() => console.log("Connected to SignalR hub"))
-    .catch(err => console.error(err));
+  connection.start().catch(err => console.error("SignalR Error: ", err));
 };
 
-export const subscribeToAuction = (auctionId: string, callback: (data: any) => void) => {
+export const subscribeToAuction = (callback: (data: any, type: string) => void) => {
   if (!connection) return;
-  connection.invoke("JoinAuction", auctionId)
-    .catch(err => console.error(err));
 
-  connection.on("NewBid", (data) => {
-    if (data.AuctionId === auctionId) callback(data);
-  });
+  connection.on("NewBid", (data) => callback(data, "UPDATE"));
+  connection.on("NewAuctionCreated", (data) => callback(data, "UPDATE"));
+  connection.on("AuctionEnded", (data) => callback(data, "UPDATE"));
+  
+  connection.on("AuctionDeleted", (auctionId) => callback(auctionId, "DELETE"));
+};
 
-  connection.on("AuctionEnded", (data) => {
-    if (data.AuctionId === auctionId) alert(`Auction ended! Winner: ${data.WinnerUserId}, Bid: ${data.WinningBid}`);
-  });
+export const unsubscribeFromAuction = () => {
+  if (connection) {
+    connection.off("NewBid");
+    connection.off("NewAuctionCreated");
+    connection.off("AuctionEnded");
+    connection.off("AuctionDeleted");
+  }
 };
 
 export const placeBid = (auctionId: string, userId: string, amount: number) => {
-  fetch(`https://localhost:5001/api/auctions/${auctionId}/bid?userId=${userId}&amount=${amount}`, {
+  fetch(`https://localhost:7068/api/auctions/${auctionId}/bid?userId=${userId}&amount=${amount}`, {
     method: 'POST'
-  }).catch(err => console.error(err));
+  });
 };

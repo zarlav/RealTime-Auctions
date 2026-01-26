@@ -44,3 +44,51 @@ C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auction
 C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Lazar\source\repos\RealTime Auctions\RealTime Auctions\RealTime Auctions\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\appsettings.Development.json
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\appsettings.json
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\RealTime Auctions.staticwebassets.endpoints.json
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\RealTime Auctions.exe
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\RealTime Auctions.deps.json
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\RealTime Auctions.runtimeconfig.json
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\RealTime Auctions.dll
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\RealTime Auctions.pdb
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\StackExchange.Redis.dll
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\System.IO.Hashing.dll
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime Auctions.csproj.AssemblyReference.cache
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime Auctions.GeneratedMSBuildEditorConfig.editorconfig
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime Auctions.AssemblyInfoInputs.cache
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime Auctions.AssemblyInfo.cs
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime Auctions.csproj.CoreCompileInputs.cache
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime Auctions.MvcApplicationPartsAssemblyInfo.cs
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime Auctions.MvcApplicationPartsAssemblyInfo.cache
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime Auctions.sourcelink.json
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\scopedcss\bundle\RealTime Auctions.styles.css
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\staticwebassets.build.json
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\staticwebassets.development.json
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\staticwebassets\msbuild.RealTime Auctions.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\staticwebassets\msbuild.RealTime Auctions.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\staticwebassets\msbuild.build.RealTime Auctions.props
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.RealTime Auctions.props
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.RealTime Auctions.props
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime.B63B7FDB.Up2Date
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime Auctions.dll
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\refint\RealTime Auctions.dll
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime Auctions.pdb
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime Auctions.genruntimeconfig.cache
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\ref\RealTime Auctions.dll
