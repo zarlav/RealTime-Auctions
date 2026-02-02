@@ -85,16 +85,6 @@
   },
   {
     "ContainingType": "RealTime_Auctions.Controllers.UsersController",
-    "Method": "GetAll",
-    "RelativePath": "api/users",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "RealTime_Auctions.Controllers.UsersController",
     "Method": "Register",
     "RelativePath": "api/users/register",
     "HttpMethod": "POST",

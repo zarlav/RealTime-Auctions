@@ -17,11 +17,16 @@ public class AuthController : ControllerBase
     [HttpPost("login")]
     public async Task<IActionResult> Login([FromBody] LoginRequest request)
     {
+        if (string.IsNullOrEmpty(request.Username) || string.IsNullOrEmpty(request.Password))
+        {
+            return BadRequest(new { message = "Korisnicko ime i lozinka su obavezni!" });
+        }
+
         var user = await _userService.ValidateUserAsync(request.Username, request.Password);
 
         if (user == null)
         {
-            return Unauthorized(new { message = "Pogrešno korisničko ime ili lozinka!" });
+            return Unauthorized(new { message = "Pogresno korisnicko ime ili lozinka!" });
         }
 
         return Ok(new
