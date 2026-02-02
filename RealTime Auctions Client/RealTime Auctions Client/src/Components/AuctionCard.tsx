@@ -19,7 +19,7 @@ const AuctionCard = ({ auction, userId, currentUserId }: any) => {
     const timer = setInterval(() => {
       const diff = new Date(auction.EndAt || auction.endAt).getTime() - new Date().getTime();
       if (diff <= 0) {
-        setTimeLeft("ZAVRŠENO");
+        setTimeLeft("ZAVRSENO");
         clearInterval(timer);
       } else {
         const mins = Math.floor(diff / 60000);
@@ -44,12 +44,12 @@ const AuctionCard = ({ auction, userId, currentUserId }: any) => {
     placeBid(id, userId, bidAmount);
   };
 
-  const isEnded = timeLeft === "ZAVRŠENO";
+  const isEnded = timeLeft === "ZAVRSENO";
 
   return (
     <div className={`auction-card ${isEnded ? 'ended' : ''}`}>
       {ownerId === currentUserId && (
-        <button onClick={handleDelete} className="delete-btn">Obriši aukciju</button>
+        <button onClick={handleDelete} className="delete-btn">Obrisi aukciju</button>
       )}
       
       <h4>{productName}</h4>

@@ -11,7 +11,6 @@ const Login: React.FC<Props> = ({ onLogin }) => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
     const endpoint = isRegistering ? '/api/users/register' : '/api/auth/login';
     const url = `https://localhost:7068${endpoint}`;
 
@@ -23,20 +22,26 @@ const Login: React.FC<Props> = ({ onLogin }) => {
       });
 
       if (response.ok) {
-        const data = await response.json();
         if (isRegistering) {
-          alert("Uspešna registracija! Sada se uloguj.");
+          alert("Uspesna registracija! Sada se ulogujte.");
           setIsRegistering(false);
+          setUsername('');
+          setPassword('');
         } else {
+          const data = await response.json();
           onLogin(data); 
         }
       } else {
         const err = await response.json();
-        alert(err.message || "Greška na serveru");
+        if (isRegistering && response.status === 409) {
+          alert("Vec imate nalog! Molimo vas da se prijavite.");
+          setIsRegistering(false); 
+        } else {
+          alert(err.message || "Greska na serveru");
+        }
       }
     } catch (error) {
-      console.error("Greška:", error);
-      alert("Proveri da li je Backend pokrenut!");
+      alert("Greska u komunikaciji sa serverom.");
     }
   };
 
@@ -44,23 +49,11 @@ const Login: React.FC<Props> = ({ onLogin }) => {
     <div className="login-container">
       <form onSubmit={handleSubmit}>
         <h2>{isRegistering ? 'Registracija' : 'Prijava'}</h2>
-        <input 
-          type="text" 
-          placeholder="Korisničko ime" 
-          value={username} 
-          onChange={(e) => setUsername(e.target.value)} 
-          required 
-        />
-        <input 
-          type="password" 
-          placeholder="Lozinka" 
-          value={password} 
-          onChange={(e) => setPassword(e.target.value)} 
-          required 
-        />
-        <button type="submit">{isRegistering ? 'Napravi nalog' : 'Uloguj se'}</button>
+        <input type="text" placeholder="Korisnicko ime" value={username} onChange={(e) => setUsername(e.target.value)} required />
+        <input type="password" placeholder="Lozinka" value={password} onChange={(e) => setPassword(e.target.value)} required />
+        <button type="submit">{isRegistering ? 'Napravite nalog' : 'Ulogujte se'}</button>
         <p onClick={() => setIsRegistering(!isRegistering)} style={{ cursor: 'pointer', color: 'blue' }}>
-          {isRegistering ? 'Već imaš nalog? Prijavi se' : 'Nemaš nalog? Registruj se'}
+          {isRegistering ? 'Vec imate nalog? Prijavite se' : 'Nemate nalog? Registrujte se'}
         </p>
       </form>
     </div>

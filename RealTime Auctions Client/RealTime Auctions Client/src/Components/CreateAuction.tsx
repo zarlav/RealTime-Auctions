@@ -23,7 +23,7 @@ const CreateAuction = ({ userId }: { userId: string }) => {
         <div style={{ border: '1px solid black', padding: '10px', marginBottom: '20px' }}>
             <h3>Pokreni novu aukciju</h3>
             <input type="text" placeholder="Naziv proizvoda" onChange={e => setName(e.target.value)} />
-            <input type="number" placeholder="Početna cijena" onChange={e => setPrice(Number(e.target.value))} />
+            <input type="number" placeholder="Početna cena" onChange={e => setPrice(Number(e.target.value))} />
             <button onClick={handleCreate}>Objavi aukciju</button>
         </div>
     );

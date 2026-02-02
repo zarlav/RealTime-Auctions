@@ -20,21 +20,22 @@ public class UsersController : ControllerBase
     {
         if (string.IsNullOrEmpty(user.Username) || string.IsNullOrEmpty(user.Password))
         {
-            return BadRequest(new { message = "Korisničko ime i lozinka su obavezni!" });
+            return BadRequest(new { message = "Korisnicko ime i lozinka su obavezni!" });
+        }
+
+        bool exists = await _userService.UserExistsAsync(user.Username);
+
+        if (exists)
+        {
+            return Conflict(new { message = "Korisnik sa tim imenom vec postoji!" });
         }
 
         await _userService.CreateUserAsync(user);
 
         return Ok(new
         {
-            message = "Uspešna registracija!",
+            message = "Uspesna registracija!",
             userId = user.Id
         });
-    }
-
-    [HttpGet]
-    public async Task<IActionResult> GetAll()
-    {
-        return Ok("Lista korisnika je u Redisu.");
     }
 }
