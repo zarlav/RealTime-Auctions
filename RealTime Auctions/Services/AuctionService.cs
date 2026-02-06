@@ -10,6 +10,7 @@ public class AuctionService
 {
     private readonly IDatabase _db;
     private readonly IHubContext<AuctionHub> _hubContext;
+    private const decimal DefaultBidIncrement = 10m;
 
     public AuctionService(IConnectionMultiplexer redis, IHubContext<AuctionHub> hubContext)
     {
@@ -17,13 +18,26 @@ public class AuctionService
         _hubContext = hubContext;
     }
 
+    private static Auction? DeserializeAuction(RedisValue data)
+    {
+        if (data.IsNullOrEmpty) return null;
+        return JsonSerializer.Deserialize<Auction>(data);
+    }
+
     public async Task CreateAuctionAsync(Auction auction)
     {
         var key = $"auction:{auction.Id}";
+
+        // Sačuvaj aukciju
         await _db.StringSetAsync(key, JsonSerializer.Serialize(auction));
-        await _db.SetAddAsync("auctions:active", auction.Id);
+
+        // Dodaj u aktivne aukcije (SortedSet sa EndAt.Ticks)
+        await _db.SortedSetAddAsync("auctions:active", auction.Id, auction.EndAt.Ticks);
+
+        // Notifikacija klijentima
         await _hubContext.Clients.All.SendAsync("NewAuctionCreated", auction);
 
+        // Background task za završetak aukcije
         _ = Task.Run(async () =>
         {
             var delay = auction.EndAt - DateTime.UtcNow;
@@ -32,31 +46,39 @@ public class AuctionService
         });
     }
 
-    public async Task PlaceBidAsync(string auctionId, string userId, decimal amount)
+    public async Task<bool> PlaceBidAsync(string auctionId, string userId, decimal amount)
     {
         var key = $"auction:{auctionId}";
         var data = await _db.StringGetAsync(key);
-        if (data.IsNullOrEmpty) return;
+        var auction = DeserializeAuction(data);
+        if (auction == null) return false;
 
-        var auction = JsonSerializer.Deserialize<Auction>(data!);
+        if (auction.Status != AuctionStatusEnum.Active || DateTime.UtcNow > auction.EndAt)
+            return false;
 
-        if (amount < auction.CurrentPrice + 10) return;
+        if (amount < auction.CurrentPrice + DefaultBidIncrement)
+            return false;
 
-        if (auction.Status != "active" || DateTime.UtcNow > auction.EndAt) return;
-
+        // Verzija za optimističku konkurenciju
+        var oldVersion = auction.Version;
         auction.CurrentPrice = amount;
         auction.LeaderUserId = userId;
+        auction.Version++;
 
+        // Updatuj aukciju u Redis
         await _db.StringSetAsync(key, JsonSerializer.Serialize(auction));
+
+        // Notify klijentima
         await _hubContext.Clients.All.SendAsync("NewBid", auction);
+
+        return true;
     }
 
     public async Task DeleteAuctionAsync(string auctionId)
     {
         var key = $"auction:{auctionId}";
         await _db.KeyDeleteAsync(key);
-        await _db.SetRemoveAsync("auctions:active", auctionId);
-
+        await _db.SortedSetRemoveAsync("auctions:active", auctionId);
         await _hubContext.Clients.All.SendAsync("AuctionDeleted", auctionId);
     }
 
@@ -64,25 +86,32 @@ public class AuctionService
     {
         var key = $"auction:{auctionId}";
         var data = await _db.StringGetAsync(key);
-        if (data.IsNullOrEmpty) return;
+        var auction = DeserializeAuction(data);
+        if (auction == null) return;
 
-        var auction = JsonSerializer.Deserialize<Auction>(data!);
-        auction.Status = "ended";
+        auction.Status = AuctionStatusEnum.Finished;
+        auction.Version++;
+
         await _db.StringSetAsync(key, JsonSerializer.Serialize(auction));
-        await _db.SetRemoveAsync("auctions:active", auctionId);
+        await _db.SortedSetRemoveAsync("auctions:active", auctionId);
 
         await _hubContext.Clients.All.SendAsync("AuctionEnded", auction);
     }
 
     public async Task<List<Auction>> GetActiveAuctionsAsync()
     {
-        var ids = await _db.SetMembersAsync("auctions:active");
-        var list = new List<Auction>();
+        // Dohvati sve ID-jeve iz SortedSet
+        var ids = await _db.SortedSetRangeByScoreAsync("auctions:active");
+
+        var auctions = new List<Auction>();
         foreach (var id in ids)
         {
             var data = await _db.StringGetAsync($"auction:{id}");
-            if (!data.IsNullOrEmpty) list.Add(JsonSerializer.Deserialize<Auction>(data!)!);
+            var auction = DeserializeAuction(data);
+            if (auction != null)
+                auctions.Add(auction);
         }
-        return list;
+
+        return auctions;
     }
 }

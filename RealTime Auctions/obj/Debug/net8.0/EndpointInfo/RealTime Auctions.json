@@ -5,6 +5,18 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/auctions/active": {
+      "get": {
+        "tags": [
+          "Auctions"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/auctions": {
       "post": {
         "tags": [
@@ -36,14 +48,36 @@
         }
       }
     },
-    "/api/auctions/{auctionId}/bid": {
+    "/api/auctions/{id}": {
+      "delete": {
+        "tags": [
+          "Auctions"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/auctions/{id}/bid": {
       "post": {
         "tags": [
           "Auctions"
         ],
         "parameters": [
           {
-            "name": "auctionId",
+            "name": "id",
             "in": "path",
             "required": true,
             "schema": {
@@ -73,60 +107,26 @@
         }
       }
     },
-    "/api/auctions/active": {
-      "get": {
-        "tags": [
-          "Auctions"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/auctions/{auctionId}/bids": {
-      "get": {
-        "tags": [
-          "Auctions"
-        ],
-        "parameters": [
-          {
-            "name": "auctionId",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/users": {
+    "/api/auth/login": {
       "post": {
         "tags": [
-          "Users"
+          "Auth"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/User"
+                "$ref": "#/components/schemas/LoginRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/User"
+                "$ref": "#/components/schemas/LoginRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/User"
+                "$ref": "#/components/schemas/LoginRequest"
               }
             }
           }
@@ -136,33 +136,32 @@
             "description": "OK"
           }
         }
-      },
-      "get": {
-        "tags": [
-          "Users"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
       }
     },
-    "/api/users/{id}": {
-      "get": {
+    "/api/users/register": {
+      "post": {
         "tags": [
           "Users"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "string"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserRegisterDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserRegisterDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserRegisterDTO"
+              }
             }
           }
-        ],
+        },
         "responses": {
           "200": {
             "description": "OK"
@@ -176,57 +175,79 @@
       "Auction": {
         "type": "object",
         "properties": {
-          "id": {
+          "Id": {
             "type": "string",
             "nullable": true
           },
-          "productName": {
+          "ProductName": {
             "type": "string",
             "nullable": true
           },
-          "ownerId": {
+          "OwnerId": {
             "type": "string",
             "nullable": true
           },
-          "startPrice": {
+          "StartPrice": {
             "type": "number",
             "format": "double"
           },
-          "currentPrice": {
+          "CurrentPrice": {
             "type": "number",
             "format": "double"
           },
-          "leaderUserId": {
+          "LeaderUserId": {
             "type": "string",
             "nullable": true
           },
-          "startAt": {
+          "StartAt": {
             "type": "string",
             "format": "date-time"
           },
-          "endAt": {
+          "EndAt": {
             "type": "string",
             "format": "date-time"
           },
-          "status": {
+          "Status": {
+            "$ref": "#/components/schemas/AuctionStatusEnum"
+          },
+          "Version": {
+            "type": "integer",
+            "format": "int64"
+          }
+        },
+        "additionalProperties": false
+      },
+      "AuctionStatusEnum": {
+        "enum": [
+          0,
+          1,
+          2
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "LoginRequest": {
+        "type": "object",
+        "properties": {
+          "Username": {
+            "type": "string",
+            "nullable": true
+          },
+          "Password": {
             "type": "string",
             "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "User": {
+      "UserRegisterDTO": {
         "type": "object",
         "properties": {
-          "id": {
+          "Username": {
             "type": "string",
             "nullable": true
           },
-          "username": {
-            "type": "string",
-            "nullable": true
-          },
-          "email": {
+          "Password": {
             "type": "string",
             "nullable": true
           }

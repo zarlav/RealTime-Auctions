@@ -92,8 +92,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "user",
-        "Type": "RealTime_Auctions.Models.User",
+        "Name": "dto",
+        "Type": "RealTime_Auctions.DTOs.UserRegisterDTO",
         "IsRequired": true
       }
     ],

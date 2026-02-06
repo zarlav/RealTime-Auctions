@@ -20,7 +20,7 @@ public class AuctionsController : ControllerBase
         auction.Id = Guid.NewGuid().ToString();
         auction.StartAt = DateTime.UtcNow;
         if (auction.EndAt <= auction.StartAt) auction.EndAt = auction.StartAt.AddMinutes(5);
-        auction.Status = "active";
+        auction.Status = AuctionStatusEnum.Active;
         await _service.CreateAuctionAsync(auction);
         return Ok(auction);
     }
