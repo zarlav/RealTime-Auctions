@@ -28,16 +28,13 @@ public class AuctionService
     {
         var key = $"auction:{auction.Id}";
 
-        // Sačuvaj aukciju
         await _db.StringSetAsync(key, JsonSerializer.Serialize(auction));
 
         // Dodaj u aktivne aukcije (SortedSet sa EndAt.Ticks)
         await _db.SortedSetAddAsync("auctions:active", auction.Id, auction.EndAt.Ticks);
 
-        // Notifikacija klijentima
         await _hubContext.Clients.All.SendAsync("NewAuctionCreated", auction);
 
-        // Background task za završetak aukcije
         _ = Task.Run(async () =>
         {
             var delay = auction.EndAt - DateTime.UtcNow;
