@@ -140,3 +140,4 @@ C:\Users\Lazar\source\repos\RealTime Auctions\RealTime-Auctions\RealTime Auction
 C:\Users\Lazar\source\repos\RealTime Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime.B63B7FDB.Up2Date
 C:\Users\Lazar\source\repos\RealTime Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\RealTime Auctions.genruntimeconfig.cache
 C:\Users\Lazar\source\repos\RealTime Auctions\RealTime-Auctions\RealTime Auctions\obj\Debug\net8.0\ref\RealTime Auctions.dll
+D:\Cetvrta godina\NBP\RealTime-Auctions\RealTime-Auctions\RealTime Auctions\bin\Debug\net8.0\BCrypt.Net-Next.dll

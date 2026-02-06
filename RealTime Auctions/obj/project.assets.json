@@ -2086,23 +2086,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lazar\\.nuget\\packages\\": {},
+    "C:\\Users\\nikol\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lazar\\source\\repos\\RealTime Auctions\\RealTime-Auctions\\RealTime Auctions\\RealTime Auctions.csproj",
+      "projectUniqueName": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\RealTime Auctions.csproj",
       "projectName": "RealTime Auctions",
-      "projectPath": "C:\\Users\\Lazar\\source\\repos\\RealTime Auctions\\RealTime-Auctions\\RealTime Auctions\\RealTime Auctions.csproj",
-      "packagesPath": "C:\\Users\\Lazar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lazar\\source\\repos\\RealTime Auctions\\RealTime-Auctions\\RealTime Auctions\\obj\\",
+      "projectPath": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\RealTime Auctions.csproj",
+      "packagesPath": "C:\\Users\\nikol\\.nuget\\packages\\",
+      "outputPath": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Lazar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nikol\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2111,6 +2111,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2127,9 +2128,8 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.300"
+        "auditMode": "all"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -2163,6 +2163,28 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.Net.Sdk.Compilers.Toolset",
+            "version": "[9.0.101, 9.0.101]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.11, 8.0.11]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -2171,8 +2193,20 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Newtonsoft.Json' 11.0.2 has a known high severity vulnerability, https://github.com/advisories/GHSA-5crp-9r3c-p9vr",
+      "libraryId": "Newtonsoft.Json",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }

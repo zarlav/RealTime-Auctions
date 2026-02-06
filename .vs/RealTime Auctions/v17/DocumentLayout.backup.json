@@ -1,0 +1,292 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|d:\\cetvrta godina\\nbp\\realtime-auctions\\realtime-auctions\\realtime auctions\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|solutionrelative:realtime auctions\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|d:\\cetvrta godina\\nbp\\realtime-auctions\\realtime-auctions\\realtime auctions\\realtime auctions.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|solutionrelative:realtime auctions\\realtime auctions.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|d:\\cetvrta godina\\nbp\\realtime-auctions\\realtime-auctions\\realtime auctions\\services\\auctionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|solutionrelative:realtime auctions\\services\\auctionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|d:\\cetvrta godina\\nbp\\realtime-auctions\\realtime-auctions\\realtime auctions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|solutionrelative:realtime auctions\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|d:\\cetvrta godina\\nbp\\realtime-auctions\\realtime-auctions\\realtime auctions\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|solutionrelative:realtime auctions\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|d:\\cetvrta godina\\nbp\\realtime-auctions\\realtime-auctions\\realtime auctions\\services\\redisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|solutionrelative:realtime auctions\\services\\redisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|d:\\cetvrta godina\\nbp\\realtime-auctions\\realtime-auctions\\realtime auctions\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|solutionrelative:realtime auctions\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|d:\\cetvrta godina\\nbp\\realtime-auctions\\realtime-auctions\\realtime auctions\\models\\bid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|solutionrelative:realtime auctions\\models\\bid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|d:\\cetvrta godina\\nbp\\realtime-auctions\\realtime-auctions\\realtime auctions\\models\\auctionstatusenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|solutionrelative:realtime auctions\\models\\auctionstatusenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|d:\\cetvrta godina\\nbp\\realtime-auctions\\realtime-auctions\\realtime auctions\\models\\auction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|solutionrelative:realtime auctions\\models\\auction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|d:\\cetvrta godina\\nbp\\realtime-auctions\\realtime-auctions\\realtime auctions\\hubs\\auctionhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|solutionrelative:realtime auctions\\hubs\\auctionhub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|d:\\cetvrta godina\\nbp\\realtime-auctions\\realtime-auctions\\realtime auctions\\dtos\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|solutionrelative:realtime auctions\\dtos\\userregisterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|d:\\cetvrta godina\\nbp\\realtime-auctions\\realtime-auctions\\realtime auctions\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|solutionrelative:realtime auctions\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|d:\\cetvrta godina\\nbp\\realtime-auctions\\realtime-auctions\\realtime auctions\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|solutionrelative:realtime auctions\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|d:\\cetvrta godina\\nbp\\realtime-auctions\\realtime-auctions\\realtime auctions\\controllers\\auctionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|solutionrelative:realtime auctions\\controllers\\auctionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|d:\\cetvrta godina\\nbp\\realtime-auctions\\realtime-auctions\\realtime auctions\\config\\rediskeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F04E8C8-2F65-4BB3-9401-DB5970178C3F}|RealTime Auctions\\RealTime Auctions.csproj|solutionrelative:realtime auctions\\config\\rediskeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RealTime Auctions.http",
+              "DocumentMoniker": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\RealTime Auctions.http",
+              "RelativeDocumentMoniker": "RealTime Auctions\\RealTime Auctions.http",
+              "ToolTip": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\RealTime Auctions.http",
+              "RelativeToolTip": "RealTime Auctions\\RealTime Auctions.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-02-06T11:58:48.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "RealTime Auctions\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Properties\\launchSettings.json",
+              "RelativeToolTip": "RealTime Auctions\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-06T11:58:40.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Program.cs",
+              "RelativeDocumentMoniker": "RealTime Auctions\\Program.cs",
+              "ToolTip": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Program.cs",
+              "RelativeToolTip": "RealTime Auctions\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T11:43:53.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "RealTime Auctions\\Services\\UserService.cs",
+              "ToolTip": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Services\\UserService.cs",
+              "RelativeToolTip": "RealTime Auctions\\Services\\UserService.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAUwF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T11:43:47.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RedisService.cs",
+              "DocumentMoniker": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Services\\RedisService.cs",
+              "RelativeDocumentMoniker": "RealTime Auctions\\Services\\RedisService.cs",
+              "ToolTip": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Services\\RedisService.cs",
+              "RelativeToolTip": "RealTime Auctions\\Services\\RedisService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T11:43:41.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuctionService.cs",
+              "DocumentMoniker": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Services\\AuctionService.cs",
+              "RelativeDocumentMoniker": "RealTime Auctions\\Services\\AuctionService.cs",
+              "ToolTip": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Services\\AuctionService.cs",
+              "RelativeToolTip": "RealTime Auctions\\Services\\AuctionService.cs",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAkwF8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T11:43:36.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Models\\User.cs",
+              "RelativeDocumentMoniker": "RealTime Auctions\\Models\\User.cs",
+              "ToolTip": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Models\\User.cs",
+              "RelativeToolTip": "RealTime Auctions\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T11:43:30.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Bid.cs",
+              "DocumentMoniker": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Models\\Bid.cs",
+              "RelativeDocumentMoniker": "RealTime Auctions\\Models\\Bid.cs",
+              "ToolTip": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Models\\Bid.cs",
+              "RelativeToolTip": "RealTime Auctions\\Models\\Bid.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T11:43:25.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuctionStatusEnum.cs",
+              "DocumentMoniker": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Models\\AuctionStatusEnum.cs",
+              "RelativeDocumentMoniker": "RealTime Auctions\\Models\\AuctionStatusEnum.cs",
+              "ToolTip": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Models\\AuctionStatusEnum.cs",
+              "RelativeToolTip": "RealTime Auctions\\Models\\AuctionStatusEnum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T11:43:20.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Auction.cs",
+              "DocumentMoniker": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Models\\Auction.cs",
+              "RelativeDocumentMoniker": "RealTime Auctions\\Models\\Auction.cs",
+              "ToolTip": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Models\\Auction.cs",
+              "RelativeToolTip": "RealTime Auctions\\Models\\Auction.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAkwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T11:43:15.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuctionHub.cs",
+              "DocumentMoniker": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Hubs\\AuctionHub.cs",
+              "RelativeDocumentMoniker": "RealTime Auctions\\Hubs\\AuctionHub.cs",
+              "ToolTip": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Hubs\\AuctionHub.cs",
+              "RelativeToolTip": "RealTime Auctions\\Hubs\\AuctionHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T11:43:07.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UserRegisterDTO.cs",
+              "DocumentMoniker": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\DTOs\\UserRegisterDTO.cs",
+              "RelativeDocumentMoniker": "RealTime Auctions\\DTOs\\UserRegisterDTO.cs",
+              "ToolTip": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\DTOs\\UserRegisterDTO.cs",
+              "RelativeToolTip": "RealTime Auctions\\DTOs\\UserRegisterDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T11:43:02.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "RealTime Auctions\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "RealTime Auctions\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAqwC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T11:42:57.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "RealTime Auctions\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "RealTime Auctions\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAcwCwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T11:42:51.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AuctionsController.cs",
+              "DocumentMoniker": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Controllers\\AuctionsController.cs",
+              "RelativeDocumentMoniker": "RealTime Auctions\\Controllers\\AuctionsController.cs",
+              "ToolTip": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Controllers\\AuctionsController.cs",
+              "RelativeToolTip": "RealTime Auctions\\Controllers\\AuctionsController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAcwCgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T11:42:46.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RedisKeys.cs",
+              "DocumentMoniker": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Config\\RedisKeys.cs",
+              "RelativeDocumentMoniker": "RealTime Auctions\\Config\\RedisKeys.cs",
+              "ToolTip": "D:\\Cetvrta godina\\NBP\\RealTime-Auctions\\RealTime-Auctions\\RealTime Auctions\\Config\\RedisKeys.cs",
+              "RelativeToolTip": "RealTime Auctions\\Config\\RedisKeys.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T11:42:39.115Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

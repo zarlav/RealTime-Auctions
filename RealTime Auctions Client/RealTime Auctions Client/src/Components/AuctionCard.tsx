@@ -10,6 +10,7 @@ const AuctionCard = ({ auction, userId, currentUserId }: any) => {
   const currentPrice = auction.CurrentPrice ?? auction.currentPrice;
   const productName = auction.ProductName || auction.productName;
   const leader = auction.LeaderUserId || auction.leaderUserId;
+  const endAt = auction.EndAt || auction.endAt;
 
   useEffect(() => {
     setBidAmount(currentPrice + 10);
@@ -17,7 +18,7 @@ const AuctionCard = ({ auction, userId, currentUserId }: any) => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      const diff = new Date(auction.EndAt || auction.endAt).getTime() - new Date().getTime();
+      const diff = new Date(endAt).getTime() - new Date().getTime();
       if (diff <= 0) {
         setTimeLeft("ZAVRSENO");
         clearInterval(timer);
@@ -28,7 +29,7 @@ const AuctionCard = ({ auction, userId, currentUserId }: any) => {
       }
     }, 1000);
     return () => clearInterval(timer);
-  }, [auction]);
+  }, [endAt]);
 
   const handleDelete = () => {
     if (window.confirm("Obrisati aukciju?")) {
@@ -36,30 +37,33 @@ const AuctionCard = ({ auction, userId, currentUserId }: any) => {
     }
   };
 
-  const handleSendBid = () => {
+  const handleSendBid = async () => {
     if (bidAmount < currentPrice + 10) {
-      alert(`Minimalna ponuda mora biti barem ${currentPrice + 10} din (Trenutna + 10 din)`);
+      alert(`Minimalna ponuda mora biti barem ${currentPrice + 10} din`);
       return;
     }
-    placeBid(id, userId, bidAmount);
+    await placeBid(id, userId, bidAmount);
   };
 
-  const isEnded = timeLeft === "ZAVRSENO";
+  const isEnded = timeLeft === "ZAVRSENO" || auction.Status === 1 || auction.status === 1;
 
   return (
     <div className={`auction-card ${isEnded ? 'ended' : ''}`}>
-      {ownerId === currentUserId && (
-        <button onClick={handleDelete} className="delete-btn">Obrisi aukciju</button>
-      )}
-      
-      <h4>{productName}</h4>
+      <div className="card-header">
+        <h4>{productName}</h4>
+        {ownerId === currentUserId && (
+          <button onClick={handleDelete} className="delete-btn">×</button>
+        )}
+      </div>
       
       <div className="price-box">
         <span className="current-price">{currentPrice} din</span>
-        <p className="leader-name">Vodi: <b>{leader || "Niko"}</b></p>
+        <p className="leader-name">Vodi: <b>{leader && leader !== "Niko" ? leader : "Nema ponuda"}</b></p>
       </div>
 
-      <div className="timer">Preostalo: {timeLeft}</div>
+      <div className={`timer ${isEnded ? 'ended-timer' : ''}`}>
+         {isEnded ? "Aukcija zavrsena" : `Preostalo: ${timeLeft}`}
+      </div>
 
       {!isEnded && (
         <div className="bid-controls">
@@ -73,8 +77,6 @@ const AuctionCard = ({ auction, userId, currentUserId }: any) => {
           <button onClick={handleSendBid} className="bid-btn">Ponudi</button>
         </div>
       )}
-      
-      {isEnded && <p className="ended-msg">Aukcija je zatvorena</p>}
     </div>
   );
 };

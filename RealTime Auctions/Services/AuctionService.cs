@@ -30,7 +30,6 @@ public class AuctionService
 
         await _db.StringSetAsync(key, JsonSerializer.Serialize(auction));
 
-        // Dodaj u aktivne aukcije (SortedSet sa EndAt.Ticks)
         await _db.SortedSetAddAsync("auctions:active", auction.Id, auction.EndAt.Ticks);
 
         await _hubContext.Clients.All.SendAsync("NewAuctionCreated", auction);
@@ -56,16 +55,13 @@ public class AuctionService
         if (amount < auction.CurrentPrice + DefaultBidIncrement)
             return false;
 
-        // Verzija za optimističku konkurenciju
         var oldVersion = auction.Version;
         auction.CurrentPrice = amount;
         auction.LeaderUserId = userId;
         auction.Version++;
 
-        // Updatuj aukciju u Redis
         await _db.StringSetAsync(key, JsonSerializer.Serialize(auction));
 
-        // Notify klijentima
         await _hubContext.Clients.All.SendAsync("NewBid", auction);
 
         return true;
@@ -97,7 +93,7 @@ public class AuctionService
 
     public async Task<List<Auction>> GetActiveAuctionsAsync()
     {
-        // Dohvati sve ID-jeve iz SortedSet
+
         var ids = await _db.SortedSetRangeByScoreAsync("auctions:active");
 
         var auctions = new List<Auction>();
